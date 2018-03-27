@@ -1,30 +1,96 @@
 body {
-  background-color: lightblue;
   font-family: 'Oswald', sans-serif;
 }
 
-header {
+nav {
   text-align: center;
-  margin: 2rem 0;
+  padding: 30px 0;
+  background: linear-gradient(#9abbd9, #8eb3d4);
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 6px 3px -3px #cbdceb;
 }
 
-header a {
+nav a {
   text-decoration: none;
   list-style: none;
-  margin: 0 1.5rem;
+  padding: 0 1.5rem;
 }
 
 img {
-  width: 30%;
-  height: 30%;
+  width: auto;
+  height: 50%;
 }
 
-div:not(:last-child) {
+/*div:not(:last-child) {
+
+}*/
+
+div {
+  height: calc(100vh - 78.4px);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  border: 2px solid black;
+  align-items: center;
+}
+
+#intro {
+  background: linear-gradient(#8eb3d4, #82aacf);
+  padding-top: 80px;
+}
+
+#retail {
+  background: linear-gradient(#82aacf, #75a2ca);
+}
+
+#ba {
+  background: linear-gradient(#75a2ca, #699ac6);
+}
+#retail2 {
+  background: linear-gradient(#699ac6, #5d91c1);
+}
+
+#libraries {
+  background: linear-gradient(#5d91c1, #5189bc);
+}
+
+#mlis {
+  background: linear-gradient(#5189bc, #4681b6);
+}
+
+#librarian {
+  background: linear-gradient(#4681b6, #4178aa);
+}
+
+#but {
+  background: linear-gradient(#4178aa, #3c6f9e);
+}
+
+#coding {
+  background: linear-gradient(#3c6f9e, #386791);
+  color: #cbdceb;
+}
+
+#shiftUp {
+  background: linear-gradient(#386791, #335e85);
+  color: #cbdceb;
+}
+
+#obstacles {
+  background: linear-gradient(#335e85, #2e5579);
+  color: #cbdceb;
+}
+
+#oneDay {
+  background: linear-gradient(#2e5579, #2a4d6d);
+  color: #cbdceb;
 }
 
 #contact {
+  color: #cbdceb;
   text-align: center;
+  background: linear-gradient(#2a4d6d, #254460);
+  flex-direction: column;
+  justify-content: center;
 }
