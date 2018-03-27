@@ -65,6 +65,10 @@ div {
 
 #but {
   background: linear-gradient(#4178aa, #3c6f9e);
+  font-weight: 700;
+  font-size: 3500%;
+  text-transform: uppercase;
+  color: #cbdceb;
 }
 
 #coding {
