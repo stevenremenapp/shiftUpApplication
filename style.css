@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Oswald', sans-serif;
   background: linear-gradient(#fae4dc, #e25d28);
@@ -14,7 +18,6 @@ nav {
   background: linear-gradient(#fcf0eb, #fae4dc);
   position: fixed;
   width: 100%;
-  box-shadow: 0 6px 3px -3px #fcf0eb;
 }
 
 nav a {
@@ -22,49 +25,39 @@ nav a {
 }
 
 img {
-  width: auto;
-  height: 50%;
+  max-width: 40%;
+  /*min-width: 20%;*/
+  height: auto;
+  max-height: 70%;
+  /*min-height: 20%;*/
 }
 
-/*div:not(:last-child) {
-
-}*/
+#fcc {
+  margin: 1rem 1.75rem;
+  min-width: 240px;
+  /*max-width: 465px;*/
+}
 
 div {
   height: calc(100vh - 78.4px);
   display: flex;
   flex-direction: column wrap;
   justify-content: space-around;
-  /*border: 2px solid black;*/
+  border: 2px solid black;
   align-items: center;
+  padding: 0 1.5rem;
 }
 
 div p:not(#but) {
   width: 500px;
   font-size: 46px;
   text-align: center;
+  line-height: 1.4;
 }
 
 #intro {
-  padding-top: 80px;
-}
-
-#retail {
-}
-
-#ba {
-}
-
-#retail2 {
-}
-
-#libraries {
-}
-
-#mlis {
-}
-
-#librarian {
+  height: 100vh;
+  padding-top: 78.4px;
 }
 
 #but {
@@ -81,20 +74,99 @@ div p:not(#but) {
   padding: 0;
 }
 
-#coding {
-}
-
-#shiftUp {
-}
-
-#obstacles {
-}
-
-#oneDay {
-}
-
 #contact {
   /*text-align: center;*/
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+}
+
+#contact p {
+  margin: 1rem 1.75rem;
+}
+
+
+/*        MEDIA QUERIES        */
+
+@media (max-width: 950px) {
+  nav a {
+    padding: 0 1.1rem;
+  }
+
+  div p:not(#but) {
+    margin: 0 1.75rem;
+    font-size: 36px;
+  }
+
+  div p:not(#contact) {
+    margin: 1rem 1.75rem;
+  }
+
+  img {
+    margin: 0 1.75rem;
+  }
+
+  #fcc {
+    margin: 1rem 1.75rem;
+  }
+
+  #but {
+    font-size: 400px;
+  }
+}
+
+@media (max-width: 750px) {
+  nav a {
+    padding: 0 0.75rem;
+  }
+
+  #but {
+    font-size: 275px;
+  }
+}
+
+@media (max-width: 588px) {
+  nav {
+    padding: 15px 0;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 0 0.75rem;
+    margin: 0.75rem 0;
+  }
+
+  div {
+    height: calc(100vh - 114.8px);
+  }
+
+  div p:not(#but) {
+    width: 300px;
+    margin: 0 1.5rem;
+    font-size: 28px;
+  }
+
+  div p:not(#contact) {
+    margin: 1rem 1.75rem;
+  }
+
+  #but {
+    font-size: 175px;
+  }
+}
+
+@media (max-width: 450px) {
+  div {
+    flex-direction: column;
+  }
+
+  div img {
+    order: 2;
+  }
+
+  #but {
+    text-shadow: -10px -10px #333,
+                 -20px -20px #666,
+                 -30px -30px #999;
+  }
 }
