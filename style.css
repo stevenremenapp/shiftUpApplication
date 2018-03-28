@@ -48,7 +48,7 @@ div {
   padding: 0 1.5rem;
 }
 
-div p:not(#but) {
+div p:not(.butShadow) {
   width: 500px;
   font-size: 46px;
   text-align: center;
@@ -60,18 +60,15 @@ div p:not(#but) {
   padding-top: 78.4px;
 }
 
-#but {
+.butShadow {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 500px;
   text-transform: uppercase;
   text-shadow: -20px -20px #333,
                -40px -40px #666,
                -60px -60px #999;
-}
-
-#but p {
-  margin: 0;
-  padding: 0;
 }
 
 #contact {
@@ -93,7 +90,7 @@ div p:not(#but) {
     padding: 0 1.1rem;
   }
 
-  div p:not(#but) {
+  div p:not(.butShadow) {
     margin: 0 1.75rem;
     font-size: 36px;
   }
@@ -110,17 +107,17 @@ div p:not(#but) {
     margin: 1rem 1.75rem;
   }
 
-  #but {
+  .butShadow {
     font-size: 400px;
   }
 }
 
 @media (max-width: 750px) {
   nav a {
-    padding: 0 0.75rem;
+    padding: 0 0.85rem;
   }
 
-  #but {
+  .butShadow {
     font-size: 275px;
   }
 }
@@ -132,15 +129,15 @@ div p:not(#but) {
 
   nav a {
     display: inline-block;
-    padding: 0 0.75rem;
-    margin: 0.75rem 0;
+    padding: 0 0.85rem;
+    margin: 0.85rem 0;
   }
 
   div {
     height: calc(100vh - 114.8px);
   }
 
-  div p:not(#but) {
+  div p:not(.butShadow) {
     width: 300px;
     margin: 0 1.5rem;
     font-size: 28px;
@@ -150,12 +147,12 @@ div p:not(#but) {
     margin: 1rem 1.75rem;
   }
 
-  #but {
+  .butShadow {
     font-size: 175px;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 525px) {
   div {
     flex-direction: column;
   }
@@ -164,7 +161,7 @@ div p:not(#but) {
     order: 2;
   }
 
-  #but {
+  .butShadow {
     text-shadow: -10px -10px #333,
                  -20px -20px #666,
                  -30px -30px #999;
