@@ -30,6 +30,16 @@ img {
   height: auto;
   max-height: 70%;
   /*min-height: 20%;*/
+  /*border-radius: 50%*/
+}
+
+.icon {
+  width: 300%;
+  height: auto;
+}
+
+#shiftUpLogo {
+  border-radius: 50%;
 }
 
 #fcc {
