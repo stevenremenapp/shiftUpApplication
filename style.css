@@ -167,3 +167,9 @@ div p:not(.butShadow) {
                  -30px -30px #999;
   }
 }
+
+@media (max-height: 450px) {
+  div {
+    height: 525px;
+  }
+}
