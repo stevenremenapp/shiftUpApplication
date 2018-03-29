@@ -1,3 +1,5 @@
+//to activate the smooth scroll script
+
 var scroll = new SmoothScroll('a[href*="#"]', {
 	// Selectors
 	header: 'nav', // Selector for fixed headers (must be a valid CSS selector)
@@ -5,4 +7,6 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 	offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
 });
 
-// gumshoe.init();
+//to active the scroll spy script found here: https://github.com/denislins/scrollmenu
+
+new ScrollMenu('nav a');

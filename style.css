@@ -7,9 +7,11 @@ body {
   background: linear-gradient(#fae4dc, #e25d28);
 }
 
-a {
+a:link,
+a:visited {
   text-decoration: none;
   list-style: none;
+  color: #494949;
 }
 
 nav {
@@ -22,6 +24,10 @@ nav {
 
 nav a {
   padding: 0 1.5rem;
+}
+
+nav a.active {
+  font-weight: 700;
 }
 
 img {
